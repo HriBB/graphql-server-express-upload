@@ -1,6 +1,6 @@
 # graphql-server-express-upload
 
-Graphql Server Express file upload middleware. Used together with [UploadNetworkInterface](https://github.com/HriBB/apollo-upload-network-interface/releases).
+Graphql Server Express file upload middleware. Used together with [apollo-upload-network-interface](https://github.com/HriBB/apollo-upload-network-interface).
 
 ## Usage
 
