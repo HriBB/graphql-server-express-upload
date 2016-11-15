@@ -127,14 +127,14 @@ class UploadProfilePicture extends Component {
 
 }
 
-const ADD_SALON_RESOURCE_PICTURE = gql`
+const UPLOAD_PROFILE_PICTURE = gql`
   mutation uploadProfilePicture($id: Int!, $files: [UploadedFile!]!) {
     uploadProfilePicture(id: $id, files: $files) {
       id url thumb square small medium large full
     }
   }`
 
-const withFileUpload = graphql(ADD_SALON_RESOURCE_PICTURE, {
+const withFileUpload = graphql(UPLOAD_PROFILE_PICTURE, {
   props: ({ ownProps, mutate }) => ({
     uploadProfilePicture: (id, files) => mutate({
       variables: { id, files },
