@@ -1,0 +1,31 @@
+{
+  "name": "graphql-server-express-upload",
+  "description": "GraphQL Server Express file upload middleware",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HriBB/graphql-server-express-upload.git"
+  },
+  "keywords": [
+    "apollo",
+    "graphql",
+    "server",
+    "express",
+    "file",
+    "upload",
+    "middleware"
+  ],
+  "author": "Bojan Hribernik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HriBB/graphql-server-express-upload/issues"
+  },
+  "homepage": "https://github.com/HriBB/graphql-server-express-upload#readme",
+  "devDependencies": {
+    "semantic-release": "^4.3.5"
+  }
+}
