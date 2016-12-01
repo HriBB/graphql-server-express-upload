@@ -8,6 +8,7 @@ Graphql Server Express file upload middleware. Used together with [apollo-upload
 
 ```
 import { graphqlExpress, graphiqlExpress } from 'graphql-server-express'
+import bodyParser from 'body-parser'
 import graphqlExpressUpload from 'graphql-server-express-upload'
 import multer from 'multer'
 
@@ -19,8 +20,8 @@ const upload = multer({
 
 app.use('/graphql',
   upload.array('files'),
-  // after multer and before graphqlExpress
-  graphqlExpressUpload({ endpointURL: '/graphql' }),
+  bodyParser.json(),
+  graphqlExpressUpload({ endpointURL: '/graphql' }), // after multer and before graphqlExpress
   graphqlExpress((req) => {
     return {
       schema,
