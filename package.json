@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/HriBB/graphql-server-express-upload#readme",
   "devDependencies": {
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^6.3.2"
   }
 }
