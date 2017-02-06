@@ -25,6 +25,11 @@
     "url": "https://github.com/HriBB/graphql-server-express-upload/issues"
   },
   "homepage": "https://github.com/HriBB/graphql-server-express-upload#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "graphql": "^0.7.2",
+    "multer": "^1.2.0"
+  },
   "devDependencies": {
     "semantic-release": "^6.3.2"
   }
